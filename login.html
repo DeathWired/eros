@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <!---css framework from bulma.io, open source. chose this framework because it is responsive and semantic-->
+    <link rel="shortcut icon" href="./images/eros.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/c9aabc0080.js"
+      crossorigin="anonymous"
+    ></script>
+    <!---fontawesome icons-->
+    <title>eros | Log In</title>
+  </head>
+  <body class="">
+    <br>
+    <div class="tile is-ancestor" style="width: 50%; margin:0 auto;">
+        <!---begin about box-->
+        <div class="tile is-parent">
+          <div class="tile is-child box">
+              <div class="field">
+                <center><img src="images/eros-light.png" alt=""></center>
+                <form id="login">
+                  <label class="label">Username</label>
+                  <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="text" placeholder="Username" name="username">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-user"></i>
+                  </span>
+                  </div>
+                  <label class="label">Password</label>
+                  <div class="control has-icons-left">
+                      <input class="input" type="password" placeholder="Password" name="password">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-key"></i>
+                    </span>
+                </form>
+                </div>
+                    <br>
+                    <center><button class="button" onclick="submitLogin()">Log in</button></center>
+                    <center><footer id="error"></footer></center>
+                    <br>
+                    <br>
+                    <center><h3 style="color: lightslategreys"><a href="/index.html">Home</a> | <a href="/signup.html">Sign Up</a></h3></center>
+          </div>
+        </div>
+        
+      </div>
+
+    <!---redirect to preferences page -->
+   
+  </body>
+  <script>
+    function submitLogin() {
+      var form = document.getElementById("login");
+      console.log(form)
+      // get the form data
+      var formData = new FormData(form);
+      // form data to json
+        var object = {};
+        formData.forEach(function(value, key){
+            object[key] = value;
+        });
+        var json = JSON.stringify(object);
+        console.log(json);
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", "https://sheezy-systems-opulent-space-goggles-qvxj5g7jj9hxpj4-80.preview.app.github.dev/api/login", true);
+      xhr.setRequestHeader("Content-Type", "application/json");
+      xhr.send(json);
+      xhr.onload = function () {
+        if (xhr.status == 200) {
+            var id = xhr.responseText;
+            var id = JSON.parse(id);
+            document.cookie = "id=" + id.sessionID;
+          window.location.href = "matches.html";
+        } else {
+          var error = document.getElementById("error");
+            error.innerHTML = xhr.responseText;
+        }
+      };
+    }
+</script>
+</html>

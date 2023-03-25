@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <!---css framework from bulma.io, open source. chose this framework because it is responsive and semantic-->
+    <link rel="shortcut icon" href="./images/eros.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/c9aabc0080.js"
+      crossorigin="anonymous"
+    ></script>
+    <!---fontawesome icons-->
+    <title>eros | Matches</title>
+  </head>
+  <body>
+    <center><h1 class="title"> Your Matches</h1></center>
+    <div class="tiles" id="people"></div>
+
+    <script>
+      var xhr = new XMLHttpRequest();
+      const cookieValue = document.cookie
+        .split("; ")
+        .find((row) => row.startsWith("id="))
+        ?.split("=")[1];
+
+      var xhr = new XMLHttpRequest();
+      xhr.open(
+        "GET",
+        "https://sheezy-systems-opulent-space-goggles-qvxj5g7jj9hxpj4-80.preview.app.github.dev/api/getmatches",
+        true
+      );
+      xhr.setRequestHeader("Content-Type", "application/json");
+      xhr.setRequestHeader("authorization", cookieValue);
+      document.getElementById("people");
+
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          let data = JSON.parse(xhr.responseText);
+          console.log(data);
+          for (let i = 0; i < data.length; i++) {
+            let name = data[i].Name;
+            let description = data[i].Description;
+            let intro = data[i].Bio;
+            let image = data[i].ImageUrl;
+            let html =""
+            html += `<div class="panel modal-content box" style="border-radius:10px; width: 85%;">`
+            if (data[i].ImageUrl != null) {
+              html += `<center><img class="person_image" src="${image}" alt="${name}"></center>`;
+        html+= `<h2 class="title tile person_header">${name}</h2>
+        <p class="body">${description}</p>
+        <p>${intro}</p>`;
+            }
+            html += "</div>";
+            people.innerHTML += html;
+          }
+        }
+      };
+
+      xhr.send();
+    </script>
+  </body>
+</html>

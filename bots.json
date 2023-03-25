@@ -1,0 +1,58 @@
+[
+    {
+        "Name": "James T. Kirk",
+        "Description": "James Tiberius Kirk is a fictional character in the Star Trek media franchise. Originally played by Canadian actor William Shatner, Kirk first appeared in Star Trek serving aboard the starship USS Enterprise as captain. Kirk leads his crew as they explore new worlds, new civilizations, and \"boldly go where no man has gone before\". Often, the characters of Spock and Leonard \"Bones\" McCoy act as his logical and emotional sounding boards, respectively. Kirk has also been portrayed in numerous films, books, comics, webisodes, and video games. ",
+        "ImageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/72/William_Shatner_Star_Trek.JPG",
+        "Bio": "No longterm, hookups only",
+        "id": "e1703353-4b82-4b78-920c-e049081ab3f9"
+    },
+
+    {
+        "Name": "Spock",
+        "Description": "Spock is a fictional character in the Star Trek media franchise. He first appeared in the original Star Trek series serving aboard the starship USS Enterprise as science officer and first officer (and Kirk's Second-in-command) and later as commanding officer of the vessel. Spock's mixed human-Vulcan heritage serves as an important plot element in many of the character's appearances. Along with Captain James T. Kirk (William Shatner) and Dr. Leonard \"Bones\" McCoy (DeForest Kelley), he is one of the three central characters in the original Star Trek series and its films. After retiring from active duty in Starfleet, Spock served as a Federation ambassador, and later became involved in the ill-fated attempt to save Romulus from a supernova,[3] leading him to live out the rest of his life in a parallel universe.",
+        "ImageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Leonard_Nimoy_as_Spock_1967.jpg",
+        "Bio": "A/S/L",
+        "id": "933fa12d-9994-4abc-8e86-e9ae612c4fac"
+    },
+
+    {
+        "Name": "Leonard McCoy",
+        "Description": "Dr. Leonard H. McCoy, known as Bones, is a character in the American science-fiction franchise Star Trek.[1] McCoy was played by actor DeForest Kelley in the original Star Trek series from 1966 to 1969, and he also appears in the animated Star Trek series, in six Star Trek films, in the pilot episode of Star Trek: The Next Generation, and in numerous books, comics, and video games.[2] A decade after Kelley's death, Karl Urban assumed the role of McCoy in the Star Trek reboot film in 2009.[3] ",
+        "ImageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/DeForest_Kelley%2C_Dr._McCoy%2C_Star_Trek.jpg",
+        "Bio": "Looking for older women (and men), no species preference",
+        "id": "127b5ae4-bd0f-47e4-8e91-eaddc2f72592"
+    },
+
+    {
+        "Name": "Montgomery Scott",
+        "Description": "Doohan was cast as the Enterprise engineer for the second Star Trek pilot, Where No Man Has Gone Before (1966) on the recommendation of that episode's director, James Goldstone, who had worked with him before.",
+        "ImageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7f/James_Doohan_Scotty_Star_Trek.JPG",
+        "Bio": "2134567898765434567",
+        "id": "e1026d29-032f-4e3c-adbc-8040a8e4eb23"
+    },
+
+    {
+        "Name": "Nyota Uhura",
+        "Description": "Nyota Uhura (/niˈoʊtə ʊˈhʊrə/), or simply Uhura, is a fictional character in the Star Trek franchise. In the original television series, the character was portrayed by Nichelle Nichols, who reprised the role for the first six Star Trek feature films. ",
+        "ImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Nichelle_Nichols%2C_NASA_Recruiter_-_GPN-2004-00017.jpg/1920px-Nichelle_Nichols%2C_NASA_Recruiter_-_GPN-2004-00017.jpg",
+        "Bio": "WLW",
+        "id": "87302233-5143-4da6-9130-4a1292029b85"
+    },
+
+    {
+        "Name": "Hikaru Sulu",
+        "Description": "Hikaru Kato Sulu[1] is a fictional character in the Star Trek media franchise.[2] A member of the crew in the original Star Trek series, Sulu also appears in the animated Star Trek series, in the first six Star Trek movies, in one episode of Star Trek: Voyager, and in several books, comics, and video games.",
+        "ImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/George_Takei_Sulu_Star_Trek.JPG/1280px-George_Takei_Sulu_Star_Trek.JPG",
+        "Bio": ".",
+        "id": "70097f19-96ec-4919-9922-399b49768ac6"
+    },
+
+    {
+        "Name": "Павел Андреевич Чехов",
+        "Description": "Walter Koenig portrayed Chekov in the second and third seasons of the original Star Trek series and the first seven Star Trek films. Anton Yelchin portrayed the character in the 2009 Star Trek reboot film and two sequels, Star Trek Into Darkness and Star Trek Beyond. Both Yelchin and Koenig were born to Russian parents, but grew up in the United States, and both affected Russian accents for their roles.",
+        "ImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Walter_Koenig_Star_Trek.JPG/440px-Walter_Koenig_Star_Trek.JPG",
+        "Bio": " ",
+        "id": "388d44ca-1498-4962-b891-995175721d88"
+    }
+
+]

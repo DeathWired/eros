@@ -1,0 +1,32 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1%;
+  grid-row-gap: 3%;
+  overflow-y: auto;
+  max-height: 100%;
+}
+.person_image {
+    height: 50%;
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .tiles {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.person{
+    background-color: orange;
+    border-radius: 25px;
+    padding: 10px;
+}
+.person_header{
+    text-align: center;
+}
+.person_image{
+    width: 50%;
+    height: 50%;
+}

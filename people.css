@@ -1,0 +1,12 @@
+.person{
+    background-color: gray;
+    border-radius: 25px;
+    padding: 10px;
+}
+.person_header{
+    text-align: center;
+}
+.person_image{
+    width: 10rem;
+    height: 10rem;
+}
